@@ -14,7 +14,17 @@ Version 0.1     Feb-21-2020     - Initial creation
 class Prj3Msgs
 {
   public:
-    Prj3Msgs(byte msgSet)
+    Prj3Msgs(byte msgSet); // default constructor
+
+    int checkRTMsgCount(); // check for count of available runtime message entries
+    int addRunTimeMsg(String msgText); // add to the limited list of runtime messages
+
+  private: // private member variables
+    String _RunTimeMsgArray[10];
+
+  private: // private member functions  
+    void 
+
 };
 
 
