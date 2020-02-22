@@ -14,6 +14,7 @@ The example demonstrates how store some user-configured or calibration parameter
 
 ## Sensing Subsystems
 See the *ArduinoLib/Sensing* subdirectory.  This subdirectory contains a varied set of individual code samples for some common sensors such as:
+- Pushbutton with debouncing and modulo-N activation: *Mod4_PBExp.ino*
 - Photoresistor: see *PhotoResExp.ino*
 - IR Receiver (photodiode with bias resistors on PCB): see *IRRecvExp.ino*
 
@@ -23,10 +24,11 @@ See the *ArduinoLib/Sensing* subdirectory.  This subdirectory contains a varied 
 
 ## Actuating Subsystems
 See the *ArduinoLib/Actuating* subdirectory.  This subdirectory contains a varied set of individual code samples for some common actuators such as:
+- RGB LED 
 - SG90 hobby servo motor: see *ServoExp.ino*
 - 28BYJ-48 stepper motor with ULN2003 driver: see *StepperExp.ino*
 - 16x2 LCD panel (I2C): see *LCDdisp.ino*
-- RGB LED
+- LEDRGB 
 
 ### Servo Motor Control
 See *ServoExp.ino* file for a code example.  Requires pre-installed additional library: *Servo*

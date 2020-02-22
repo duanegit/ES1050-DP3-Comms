@@ -9,7 +9,9 @@ Version 0.1     Feb-21-2020     - Initial creation
 #ifndef Prj3Msgs_h
 #define Prj3Msgs_h
 
-#include "Arduino.h"
+#ifndef ARDUINO 
+    #include <Arduino.h>
+#endif
 
 class Prj3Msgs
 {
