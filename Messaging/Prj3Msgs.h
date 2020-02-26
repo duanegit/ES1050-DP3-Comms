@@ -10,8 +10,11 @@ Version 0.1     Feb-21-2020     - Initial creation
 #define Prj3Msgs_h
 
 #ifndef ARDUINO 
-    #include <Arduino.h>
+//    #include <Arduino.h>
 #endif
+
+typedef enum _remoteCmds {_unknown = -1, _idle, _pwr_cmd, _play_cmd, _pause_cmd, _stop_cmd, _volUP_cmd, volDN_cmd, volVAL_cmd, _chanUP_cmd, _chanDN_cmd, _chanVAL_cmd } remoteCmds;
+
 
 class Prj3Msgs
 {
@@ -25,7 +28,9 @@ class Prj3Msgs
     String _RunTimeMsgArray[10];
 
   private: // private member functions  
-    void 
+    remoteCmds _lastcmd, _nextcmd;
+
+
 
 };
 
